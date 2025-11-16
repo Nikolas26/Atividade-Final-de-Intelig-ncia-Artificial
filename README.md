@@ -6,80 +6,57 @@ Este repositório contém a atividade final da disciplina de Inteligência Artif
 🎯 Objetivo
 
 Aplicar três modelos de machine learning supervisionado:
-
-XGBoost
-
-SVM (Support Vector Machine)
-
-Random Forest
+- XGBoost
+- SVM (Support Vector Machine)
+- Random Forest
 
 O objetivo é comparar o desempenho, custo computacional e interpretabilidade de cada modelo.
 
 🧩 Descrição da Tarefa
 📌 Dataset
 
-Utilizar o dataset Titanic, obtido via Kaggle ou pelo seaborn:
-seaborn.load_dataset("titanic")
+Utilizar o dataset Titanic
 
 🎯 Variável-alvo
 
-Survived
-
-0 = não sobreviveu
-
-1 = sobreviveu
+- Survived
+* 0 = não sobreviveu
+* 1 = sobreviveu
 
 🔧 Variáveis sugeridas
 
-Pclass
-
-Sex
-
-Age
-
-Fare
-
-SibSp
-
-Parch
-
-Embarked
+- Pclass
+- Sex
+- Age
+- Fare
+- SibSp
+- Parch
+-Embarked
 
 🔄 Pré-processamento dos Dados
 
 As etapas de preparação no notebook incluem:
-
-Tratamento de valores ausentes (Age, Embarked etc.)
-
-Codificação de variáveis categóricas (One-Hot Encoding)
-
-Padronização de variáveis numéricas (StandardScaler)
-
-Construção de pipelines para processamento organizado
-
-Divisão estratificada entre treino e teste
+- Tratamento de valores ausentes (Age, Embarked etc.)
+- Codificação de variáveis categóricas (One-Hot Encoding)
+- Padronização de variáveis numéricas (StandardScaler)
+- Construção de pipelines para processamento organizado
+- Divisão estratificada entre treino e teste
 
 🤖 Modelos Treinados
 
 Os seguintes algoritmos foram implementados e avaliados:
 
 1. XGBoost Classifier
-
-Modelo baseado em boosting
-
-Alta performance e boa capacidade de generalização
+- Modelo baseado em boosting
+- Alta performance e boa capacidade de generalização
 
 2. Support Vector Machine (SVM)
-
-Usado com kernel apropriado para dados tabulares
-
-Requer normalização (incluída no pipeline)
+- Usado com kernel apropriado para dados tabulares
+- Requer normalização (incluída no pipeline)
 
 3. Random Forest
-
-Ensemble baseado em árvores de decisão
-
-Robusto a valores faltantes e variáveis ruidosas
+- Ensemble baseado em árvores de decisão
+- Robusto a valores faltantes e variáveis ruidosas
 
 📊 Métricas Avaliadas
 
@@ -87,21 +64,15 @@ Os modelos foram comparados utilizando:
 
 🔑 Métrica Principal
 
-ROC-AUC
+- ROC-AUC
 
 📈 Métricas Secundárias
 
-Acurácia
-
-F1-Score
-
-Matriz de Confusão
-
-Curvas ROC
-
-Curvas Precision-Recall
-
-Todas as curvas e métricas foram geradas no notebook.
+- Acurácia
+- F1-Score
+- Matriz de Confusão
+- Curvas ROC
+- Curvas Precision-Recall
 
 📉 Resultados
 
@@ -116,29 +87,18 @@ Discussão sobre overfitting, sensibilidade e interpretabilidade
 🗂 Estrutura do Notebook
 
 O notebook segue esta organização:
-
-Importação de bibliotecas
-
-Carga e exploração do dataset
-
-Pré-processamento com pipelines
-
-Treinamento dos modelos
-
-Avaliação e comparação
-
-Visualização de métricas
-
-Conclusões
+- Importação de bibliotecas
+- Carga e exploração do dataset
+- Pré-processamento com pipelines
+- Treinamento dos modelos
+- Avaliação e comparação
+- Visualização de métricas
+- Conclusões
 
 📌 Conclusão
 
 O projeto explora e compara três abordagens supervisionadas para classificação, destacando:
-
-Diferenças de desempenho
-
-Impacto do pré-processamento
-
-Complexidade computacional
-
-Capacidade de generalização
+- Diferenças de desempenho
+- Impacto do pré-processamento
+- Complexidade computacional
+- Capacidade de generalização
